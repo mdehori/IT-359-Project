@@ -1,1 +1,16 @@
+Welcome to our keylogger
+
+Requirements:
+Pynput 
+Listener
+
+
+Setup:
+Install pynput, listener
+Unzip keylogger_main
+Navigate inside the keylogger_main directory
+Run the command ./keylogger
+In the background begin entering keystrokes
+In the keylogger_main directory enter the command “cat key_log.txt”
+Press “ctrl c” to stop program
 
